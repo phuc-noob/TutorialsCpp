@@ -31,6 +31,6 @@ int main()
  
 int add(int x, int y)
 {
-	cin >> x >> y;
+    cin >> x >> y;
     return x + y;
 }
