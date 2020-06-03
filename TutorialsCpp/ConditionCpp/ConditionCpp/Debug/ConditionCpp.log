@@ -1,3 +1,0 @@
-﻿  IfStatemant.cpp
-C:\TutorialsCpp\ConditionCpp\ConditionCpp\IfStatemant.cpp(34): warning C4715: 'CheckNumber': not all control paths return a value
-  ConditionCpp.vcxproj -> C:\TutorialsCpp\ConditionCpp\Debug\ConditionCpp.exe
