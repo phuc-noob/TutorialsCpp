@@ -13,8 +13,8 @@ void rutGon(char D[]);
 int main()
 {
 	char A[Size], B[Size], C[Size], D[Size];
-	gets_s(A);
-	gets_s(B);
+	gets(A);
+	gets(B);
 	chuanHoa(A, B);
 	tinhTong(A, B, C);
 	tinhHieu(A, B, D);
