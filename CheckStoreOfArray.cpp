@@ -26,7 +26,7 @@ int main()
 	output(C,D[0],D[1]);
 	inputFloatArray(E, k);
 	SortArray(E,k);
-	outputFloatArray(E,k)
+	outputFloatArray(E,k);
 	return 0;
 }
 
