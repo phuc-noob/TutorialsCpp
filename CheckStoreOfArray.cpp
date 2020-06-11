@@ -7,6 +7,9 @@ void outMultiDimentionalArray(int A[][5]);
 void inputArray(int A[][Size], int &m,int &n);
 void findMaxOfArray(int A[][Size],int m,int n,int B[2]);
 void output(int A[][Size], int m,int n);
+void inputFloatArray(float E[Size], int k);
+void SortArray(float E[Size], int k);
+void outputFloatArray(float E,int k);
 
 int main()
 {
@@ -14,12 +17,47 @@ int main()
 	int B[5][5];
 	int C[Size][Size],int m,int n;
 	int D[2]={0};
+	int k;
+	float E[Size];
 	outMemoryOfArray(A);
 	outMultiDimentionalArray(B);
 	inputArray(C,m,n);
 	findMaxOfArray(C, m, n,D);
 	output(C,D[0],D[1]);
+	inputFloatArray(E, k);
+	SortArray(E,k);
+	outputFloatArray(E,k)
 	return 0;
+}
+
+// declare a float array and sort element of array
+void outputFloatArray(float E,int k)
+{
+	cout <<"------------";
+	for(int i=0; i<k;i++){
+		cout <<E[i] <<" ";
+	}
+}
+void SortArray(float E[Size], int k)
+{
+	int tam =0;
+	for(int i=0; i<k-1;i++){
+		for(j=i+1;j<k;j++){
+			if(E[i] >E[j]){
+				tam =E[j];
+				E[j] =E[i];
+				E[i] =tam;
+		}
+	}
+}
+
+void inputFloatArray(float E[Size], int k)
+{
+	cout <<"Enter lenght your array : ";
+	cin >> k;
+	for(int i=0;i <k;i++){
+		cin >>E[i];
+	}
 }
 
 void output(int A[][Size], int m,int n)
