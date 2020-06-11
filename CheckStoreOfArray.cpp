@@ -47,6 +47,7 @@ void SortArray(float E[Size], int k)
 				tam =E[j];
 				E[j] =E[i];
 				E[i] =tam;
+			}
 		}
 	}
 }
